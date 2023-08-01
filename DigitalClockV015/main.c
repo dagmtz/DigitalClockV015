@@ -225,6 +225,7 @@ ISR( INT0_vect )
 {
 	g_heartbeat_1s = true;
 	g_time++;
+	//system_tick();
 	PORTB ^= _BV( PORTB5 );	
 }
 
